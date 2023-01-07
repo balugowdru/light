@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LampLight</title>
+    <link rel="icon" type="image" href="img/lightbulb.png">
+    <link rel="stylesheet" href="lampLight.css"> 
+   
+    
+</head>
+<body>
+
+<div class="hero">
+    <nav>   
+        <img src="img/menuicon.png" class="menu-bar" alt="">
+         <img src="img/balu2.gif" class="logo" alt=""> 
+        <ul>
+            <li><a href=""  >latest  </a></li>
+            <li><a href="">New </a></li>
+            <li><a href="">menu</a></li>
+            <li><a href="">Price</a></li>
+        </ul>
+        <button type="button"  onclick="toggleBtn()" id="btn"> <span></span></button>
+    </nav>
+    <div class="lamp-container">
+        <img src="img/lamp.png" class="lamp" alt="">
+        <img src="img/light.png" class="ligth" id="ligth" alt="">
+
+    </div>
+    <div class="text">
+        <h1>Life is good <br>  at Light</h1>
+        <p>Light must come from inside. You cannot ask the darkness to leave; you must turn on the light </p>
+        <a href="  ">Get in</a>
+        <div class="control">
+            <p>o4</p>
+            <div class="line"><span></span></div>
+            <p>05</p>
+        </div>
+    </div>
+</div>
+    <script>
+        var btn= document.getElementById("btn");
+        var ligth= document.getElementById("ligth");
+        
+        function toggleBtn(){ 
+         btn.classList.toggle("active");
+         ligth.classList.toggle("on")
+        }
+    </script>
+</body>
+</html>
